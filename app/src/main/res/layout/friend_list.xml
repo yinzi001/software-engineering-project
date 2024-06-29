@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/friend_list"
+    android:background="@color/background_theme"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <!-- 头像和名字的容器 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 头像ImageView -->
+        <ImageView
+            android:id="@+id/friend_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/female_region"
+        android:contentDescription="@string/avatar" />
+
+        <!-- 名字TextView -->
+        <TextView
+            android:id="@+id/friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="16sp"
+            android:text="@string/username"
+            android:textColor="@color/words_icon" />
+    </LinearLayout>
+
+    <!-- 聊天图标ImageView -->
+    <ImageView
+        android:id="@+id/friend_chat_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/in"
+        android:contentDescription="@string/chat" />
+</LinearLayout>

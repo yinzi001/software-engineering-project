@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/other"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:background="#008520" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/other"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/others_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="#2CA3E5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="内容标题" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="内容" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear1"
+            android:layout_alignLeft="@id/linear1"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/friend_imag"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#004522"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/friend_ima"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="#005894"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!--> 显示 对应的 图片 等等<-->
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linear2"
+            android:layout_alignStart="@id/linear1"
+            android:layout_marginTop="10dp"
+            android:text="30分钟前" />
+
+        <Button
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_alignBottom="@+id/time_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="#005894" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/time_text"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

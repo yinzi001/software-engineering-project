@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">工大圈子</string>
+    <string name="blog_view_userid" />
+    <string name="blog_view_tema" />
+    <string name="blog_view_context" />
+    <string name="profile_image_description">用户头像</string>
+    <string name="search_button_description">搜索</string>
+    <string name="words">人生若只如初见</string>
+    <string name="apptheme">工大圈子</string>
+    <string name="back">back</string>
+    <string name="kuwasiku">右下角的帖子详情</string>
+    <string name="button">按钮</string>
+    <string name="chat">chat\n</string>
+    <string name="avatar">avatar\n</string>
+    <string name="username">用户名</string>
+    <string name="type_message">请输入信息</string>
+    <string name="send">发送</string>
+    <string name="more">更多</string>
+    <string name="friend_name">好友名字\n</string>
+    <string name="profile_image">对方发送信息布局\n</string>
+    <string name="message_content">对方发送消息布局-消息主体\n</string>
+    <string name="message_time">信息时间\n</string>
+</resources>

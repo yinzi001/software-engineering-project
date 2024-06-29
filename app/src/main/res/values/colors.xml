@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="semi_transparent_black">#99000000</color> <!-- 60%透明度的黑色 -->
+    <color name="login_button_color">#005375</color>
+    <color name="bg_gray">#BEBEBE</color>
+    <!-- 主色调，深蓝色，适用于导航栏或标题栏 -->
+    <color name="title">#012E40</color>
+    <!-- 次级色调，深青色，适用于底部导航栏或按钮 -->
+    <color name="navi_button">#024959</color>
+    <!-- 强调色，青绿色，适用于重要按钮或链接 -->
+    <color name="button_color">#026773</color>
+    <!-- 背景色或卡片色，浅青绿色，适用于背景或卡片元素 -->
+    <color name="background_theme">#3CA6A6</color>
+    <!-- 文字或图标的浅色背景，米色，适用于浅色背景上的文字或图标 -->
+    <color name="words_icon">#F2E3D5</color>
+</resources>

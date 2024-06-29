@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/background_theme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".blogview_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-362dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="186dp">
+
+            <ImageView
+                android:id="@+id/others_image"
+                android:backgroundTint="@color/background_theme"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:background="#008520" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/others_image"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/others_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="othersname"
+                    android:textColor="#2CA3E5" />
+
+                <TextView
+                    android:id="@+id/others_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/words_icon"
+                    android:layout_marginTop="5dp"
+                    android:text="title " />
+
+                <TextView
+                    android:id="@+id/others_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/words_icon"
+                    android:layout_marginTop="5dp"
+                    android:text="sdhau  fe f  ewf   ew  w w  " />
+            </LinearLayout>
+
+            <!--> blog图片  <-->
+            <RelativeLayout
+                android:id="@+id/linear2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/linear1"
+                android:layout_alignLeft="@id/linear1"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/friend_images"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#004522"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <!--> 显示 time 详情 等等<-->
+                <TextView
+                    android:id="@+id/time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linear2"
+                    android:layout_alignStart="@id/linear1"
+                    android:layout_marginTop="10dp"
+                    android:text="-1min before" />
+
+                <ImageView
+                    android:id="@+id/in"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="2dp"
+                    android:layout_alignBottom="@+id/time_text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/kuwasii"
+                    android:background="@color/background_theme"
+                    android:contentDescription="@string/kuwasiku"
+                    android:text="@string/button" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/time_text"
+                    android:layout_marginTop="17dp"
+                    android:background="@android:color/darker_gray" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
